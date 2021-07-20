@@ -11,7 +11,7 @@ Features:
 
 Preview
 -------------
-![preview image](assets/preview.PNG "preview"))
+![preview image](assets/preview.PNG "preview")
 
 Usage
 -------------
