@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- inspired by wolfiy -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- change this if you want different tab icon + text -->
+		<title>Здравствуйте</title>
+		<link rel="icon" href="assets/favicon.ico">
+		<!-- change this if you want to change fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+        <script src="scripts/transitions.js"></script>
+	</head>
+
+	<body>
+		<svg id="fader"></svg>
+        <script>fadeInPage();</script>
+
+		<!-- welcome screen -->
+		<div id="main_window">
+			<!-- change this if you want a different image -->
+			<img id="leftImg" src="assets/arikawa-t.png" class="image">
+
+            <!-- date and time-->
+			<div id="content">
+				<h1 class="title">Здравствуйте</h1>
+				<div id="date">
+					<script type="text/javascript">
+						function doDate() {
+							var str = "";
+							var months = new Array("январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь");
+							var clock = new Date();
+							var now = new Date();
+
+							str += now.getDate() + " " + months[clock.getMonth()] + " " + clock.getFullYear() + " | " + ("0" + now.getHours()).slice(-2) +":" + 
+                                    ("0" + now.getMinutes()).slice(-2) + ":" + ("0" + now.getSeconds()).slice(-2);
+                            document.getElementById("date").innerHTML = str;
+						}
+						setInterval(doDate, 1000);
+						doDate();
+					</script>
+				</div>
+
+                <!-- weather -->
+                <div class="temperature">
+                    <p></p>
+                </div>
+
+		<!-- web search -->
+				<div class="search-box">
+					<!-- change search engine here -->
+					<form id="search" method="GET" action="https://duckduckgo.com/">
+						<label for="q">></label>
+						<input autofocus id="input_box" class="input_box" type="text" name="q" autocomplete="off" placeholder="Поиск тут...">
+					</form>
+				</div>
+
+		<!-- links -->
+				<nav>
+					<div id=links_container>
+						<ul>
+							<a class="subtitle">часто</a>
+                                <li><a href="https://github.com/">github</a></li>
+								<li><a href="https://anilist.co/">anilist</a></li>
+								<li><a href="https://mangadex.org/">mangadex</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">дофамин</a>
+                                <li><a href="https://animixplay.to/">anime</a></li>
+								<li><a href="https://www.netflix.com/browse">netflix</a></li>
+								<li><a href="https://www.youtube.com/">youtube</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">социальные медиа</a>
+                                <li><a href="https://www.reddit.com/">reddit</a></li>
+								<li><a href="https://www.twitch.tv/">twitch</a></li>
+								<li><a href="https://twitter.com/home">twitter</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">школа</a>
+                                <li><a href="https://mail.google.com/">mail</a></li>
+                                <li><a href="https://drive.google.com/">cloud</a></li>
+								<li><a href="https://canvas.vt.edu/">canvas</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">другое</a>
+                                <li><a href="https://1337x.to/">1337</a></li>
+                                <li><a href="https://4chan.org/">4chan</a></li>
+								<li><a href="https://wiki.archlinux.org/">arch btw</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="bottom">
+			<p class="credits">
+				<a href="https://github.com/laynH/Anime-Girls-Holding-Programming-Books">art from laynH's repo</a>
+			</p>
+
+			<div class="contacts">
+				<p>	
+					<!-- can get rid of this repo or place another link here -->
+					<a href="https://github.com/kaneru-soju/arch-setup">github repo</a> | 
+					<span id="light-mode-toggle" class="light-mode-toggle">switch themes</span>
+				</p>
+			</div>
+		</div>
+
+		<script src="scripts/darkmode.js"></script>
+        <script src="scripts/weather.js"></script>
+	</body>
+</html>
