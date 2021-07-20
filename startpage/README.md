@@ -9,6 +9,10 @@ Features:
 - favorite links
 ```
 
+Preview
+-------------
+![preview image](assets/preview.PNG "preview"))
+
 Usage
 -------------
 To use this page as your new tab, you'll have to install an extension that works with local files or host the website yourself

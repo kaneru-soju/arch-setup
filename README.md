@@ -1,2 +1,2 @@
-# arch-setup
-my personal arch setup + rice
+# kaneru's arch customization
+my personal arch setup + rice (WIP)
