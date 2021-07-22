@@ -7,6 +7,7 @@ Features:
 - date and time
 - weather
 - favorite links
+- falling leaves
 ```
 
 Preview
