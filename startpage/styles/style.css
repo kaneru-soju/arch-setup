@@ -312,7 +312,7 @@ form {
     
     100% {
         -webkit-transform:
-            translate3d(-350px,70vh,0)
+            translate3d(-350px,90vh,0)
             rotate(90deg);
         opacity: 0;
     }
@@ -327,7 +327,7 @@ form {
     
     100% {
         -webkit-transform:
-            translate3d(-230px,70vh,0)
+            translate3d(-230px,90vh,0)
             rotate(-70deg);
         opacity: 0;
     }
@@ -342,7 +342,7 @@ form {
     
     100% {
         -webkit-transform:
-            translate3d(-400px,70vh,0)
+            translate3d(-400px,90vh,0)
             rotate(0deg);
         opacity: 0;
     }
