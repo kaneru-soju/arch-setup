@@ -79,7 +79,7 @@ htop \
 sudo \
 ranger \
 ncdu \
-fd-find
+fd
 
 
 # install nouveau drivers if you have nvidia gpu (for wayland)
