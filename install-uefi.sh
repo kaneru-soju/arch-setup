@@ -12,29 +12,25 @@ LOCALE=locale
 ln -sf "/usr/share/zoneinfo/${TIMEZONE}" /etc/localtime
 hwclock --systohc
 # if you use a different locale, edit to fit yours
-sed -i "s/#\s*${LOCALE}/${LOCALE}/"
-locale-gen
+sed -i "s/#\s*${LOCALE}/${LOCALE}/" /etc/locale.gen
+locale-gen 
 
-if [[ ! -s /etc/locale.conf ]]; then
+if [[ -s /etc/locale.conf ]]; then
     echo 'there is something here already'
 else
     echo "LANG=${LOCALE}.UTF-8" >> /etc/locale.conf
 fi
 
-if [[ ! -s /etc/hostname ]]; then
+if [[ -s /etc/hostname ]]; then
     echo 'there is something here already'
 else
     echo "${HOST_NAME}" >> /etc/hostname
 fi
 
-if [[ ! -s /etc/hosts ]]; then
-    echo 'there is something here already'
-else
-    echo "127.0.0.1 localhost\n::1       localhost\n127.0.1.1 ${HOST_NAME}.lan ${HOST_NAME}" >> /etc/hosts
-fi
+echo -e "127.0.0.1\tlocalhost\n::1\t\tlocalhost\n127.0.1.1\t${HOST_NAME}.lan ${HOST_NAME}" >> /etc/hosts
 
 # my list of packages I want to install for general linux (tlp not needed if not using laptop)
-# earlier in my install I pacstrap w/ linux linux-firmware base base-devel vim git
+# earlier in my install I pacstrap w/ linux linux-firmware base base-devel vim git amd-ucode
 pacman -Syu
 pacman -S \
 grub \
@@ -137,8 +133,8 @@ fi
 
 # adds you to the wheel so you can steer the ship matey
 useradd -mG wheel ${USER_NAME}
-${USER_NAME} passwd
-sed -i 's/#\s*%wheel ALL=(ALL) ALL N/%wheel ALL=(ALL) ALL N'
+passwd ${USER_NAME}
+sed -i 's/#\s*%wheel ALL=(ALL) N/%wheel ALL=(ALL) N/' /etc/sudoers
 
 # random cool password for root
 ROOT_PASSWORD=$(tr -dc A-Za-z0-9 </dev/urandom | head -c 32; echo '')
