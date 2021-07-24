@@ -13,6 +13,7 @@ ln -sf "/usr/share/zoneinfo/${TIMEZONE}" /etc/localtime
 hwclock --systohc
 # if you use a different locale, edit to fit yours
 sed -i "s/#\s*${LOCALE}/${LOCALE}/" /etc/locale.gen
+sort -uo /etc/locale.gen /etc/locale.gen
 locale-gen 
 
 if [[ -s /etc/locale.conf ]]; then
