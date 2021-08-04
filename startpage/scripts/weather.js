@@ -5,8 +5,8 @@ weather.temperature = {
   unit: '<your-units>',
 };
 
-// change to 'F' if you need fahrenheit
-var tempUnit = 'C';
+// change to 'C' if you need celsius
+var tempUnit = 'F';
 
 const KELVIN = 273.15;
 // use your own key for the weather, get it here: https://openweathermap.org/
