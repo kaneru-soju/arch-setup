@@ -5,7 +5,7 @@ Features:
 ```
 - dark mode toggle
 - date and time
-- weather
+- weather (you need to configure this for it to work)
 - favorite links
 - falling leaves
 ```

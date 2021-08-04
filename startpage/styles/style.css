@@ -1,11 +1,11 @@
 /* dark mode colors */
 :root {
 	--red: #bd9980;
-	--white: #DCDCCC;
-	--yellow: #f0dfaf;
+	--white: #ebdbb2;
+	--yellow: #ebdbb2;
 
 	--bg: #282828;
-	--fg: #3f3f3f;
+	--fg: #3c3836;
 
 	--search-bg: rgba(255, 255, 255, 0);
 	}
@@ -49,6 +49,16 @@ p[class=credits] > a {
     font: inherit;
     color: var(--yellow);
     width: 350px;
+}
+
+::placeholder {
+    color: var(--yelow);
+    opacity: 0.6;
+}
+
+::-ms-input-placeholder {
+    color: var(--yelow);
+    opacity: 0.6;
 }
 
 form {
