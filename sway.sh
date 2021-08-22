@@ -42,7 +42,8 @@ swaylock-effects-git \
 zsh \
 zsh-autosuggestions \
 zsh-syntax-highlighting \
-zsh-theme-powerlevel10k-git
+zsh-theme-powerlevel10k-git \
+chili-sddm-theme
 
 echo "\e[1;32mREBOOTING IN 5..4..3..2..1..\e[0m"
 sleep 5
