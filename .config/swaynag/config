@@ -1,0 +1,16 @@
+[custom]
+font=mononoki Nerd Font 12
+dismiss-button=Dismiss
+background=282828
+border=3c3836
+border-bottom=665c54
+button-background=504945
+button-text=ebdbb2
+text=ebdbb2
+border-bottom-size=3
+message-padding=5
+details-border-size=2
+button-border-size=0
+button-gap=5
+button-dismiss-gap=5
+button-padding=5
