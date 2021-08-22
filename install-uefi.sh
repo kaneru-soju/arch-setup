@@ -80,7 +80,9 @@ htop \
 sudo \
 ranger \
 ncdu \
-fd
+fd \
+curl \
+brightnessctl
 
 
 # install nouveau drivers if you have nvidia gpu (for wayland)
@@ -124,6 +126,9 @@ systemctl enable cups.service
 systemctl enable avahi-daemon
 systemctl enable reflector.timer
 systemctl enable fstrim.timer
+systemctl enable pipewire
+systemctl enable pipewire-pulse
+systemctl enable pipewire-media-session.service
 if pacman -Qs tlp; then
     echo "you got tlp!"
     systemctl enable tlp

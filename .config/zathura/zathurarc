@@ -1,0 +1,44 @@
+set font			"mononoki Nerd Font 10"
+set default-fg 			"#ebdbb2"
+set default-bg 			"#282828"
+
+set completion-bg		"#282828"
+set completion-fg		"#ebdbb2"
+set completion-highlight-bg	"#3c3836"
+set completion-highlight-fg	"#ebdbb2"
+set completion-group-bg		"#282828"
+set completion-group-fg		"#458588"
+
+set statusbar-fg		"#a89984"
+set statusbar-bg		"#3c3836"
+set statusbar-h-padding		10
+set statusbar-v-padding		10
+
+set notification-bg		"#3c3836"
+set notification-fg		"#a89984"
+set notification-error-bg	"#cc241d"
+set notification-error-fg	"#282828"
+set notification-warning-bg	"#d79921"
+set notification-warning-fg	"#282828"
+set selection-notification	"true"
+
+set inputbar-fg			"#ebdbb2"
+set inputbar-bg 		"#282828"
+
+set recolor			"true"
+set recolor-lightcolor		"#282828"
+set recolor-darkcolor		"#ebdbb2"
+
+set index-fg			"#ebdbb2"
+set index-bg			"#282828"
+set index-active-fg		"#ebdbb2"
+set index-active-bg		"#3c3836"
+
+set render-loading-bg		"#282828"
+set render-loading-fg		"#ebdbb2"
+
+set highlight-color		"#458588"
+set highlight-active-color	"#b16286"
+
+set adjust-open			"width"
+set selection-clipboard clipboard

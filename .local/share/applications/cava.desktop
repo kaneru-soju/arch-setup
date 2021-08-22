@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=cava
+Comment=Launches cava
+Terminal=false
+Exec=kitty --class cava cava
+Categories=Music;
